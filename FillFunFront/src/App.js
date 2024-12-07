@@ -3,6 +3,8 @@ import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Landing from './components/landing/landing';
 import Boards from './components/boards/boards.js';
+import Profile from './components/profile/Profile.js';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/vendor/swiper/swiper-bundle.min.css';
@@ -14,6 +16,8 @@ import './assets/vendor/swiper/swiper-bundle.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+// import "./components/profile/profile.css";
+
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -62,6 +66,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/boards" element={<Boards />} />
+          <Route path="/profile" element={<Profile/>}/>
         </Routes>
 
         <Footer />
